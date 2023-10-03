@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 Sistema pra Biblioteca
+  p Seja bem-vindo ao software de gerenciamento para biblioteca
+  h1 Conteúdos cadastrados
+
+  p The library has the following record counts:
+
+  ul
+    li #[strong Livros:] !{book_count}
+    li #[strong Cópias:] !{book_instance_count}
+    li #[strong Cópias disponíveis:] !{book_instance_available_count}
+    li #[strong Autores:] !{author_count}
+    li #[strong Gêneros:] !{genre_count}
